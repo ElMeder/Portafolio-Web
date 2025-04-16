@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #41444B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 70px; 
+    background-color: white;
+}
+
+dlv{
+    width: 100%;
+    height: auto;
+    display: bottom;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.font {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.font2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto por defecto */
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    color: #111;
+}
+
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.main-content.shift {
+    margin-left: 250px;
+}
+
+#articulos {
+    background-color: #52575D;
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Texto descriptivo */
+.Sección1 {
+    background-color: #CABFAB;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contenedor-secciones section {
+    background-color: #CABFAB;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    width: 28%;
+    min-width: 260px;
+    box-sizing: border-box;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contenedor-imagenes img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 10px;
+}
