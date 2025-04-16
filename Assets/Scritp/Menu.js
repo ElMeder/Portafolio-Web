@@ -1,4 +1,7 @@
 function toggleMenu() {
-    document.getElementById("mySidebar").classList.toggle("open");
-    document.getElementById("main").classList.toggle("shift");
+    const sidebar = document.getElementById("mySidebar");
+    const content = document.getElementById("content");
+
+    sidebar.classList.toggle("open");
+    content.classList.toggle("shift");
 }
